@@ -19,6 +19,10 @@ pdf.set_font('helvetica', '', 16)
 # Add text
 #w = width
 #h = height
-pdf.cell(40, 10, 'Hello World, working now')
+#ln( 0 False, 1 True - move cursor down to next line)
+#border ( 0 False , 1 True - add border around cell)
 
-pdf.output('pdf_1.pdf')
+pdf.cell(120, 100, 'Hello World, working now', ln=True, border = 1)
+pdf.cell(80, 10, 'Good night')
+
+pdf.output('pdf_2.pdf')
