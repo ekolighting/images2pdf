@@ -84,7 +84,8 @@ class PDF(FPDF):
     def chapter_body(self, img_path):
         #set font
         self.set_font('times','', 12)
-
+        
+        #set fill color
         self.set_fill_color(0,0,0)
         #Add image
         pdf.image(img_path, x = -0.5, w= pdf.w +1)
